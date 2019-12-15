@@ -1,0 +1,9 @@
+{
+  "editor.rulers": [100],
+  "editor.tabSize": 2,
+  "search.exclude": {
+    "flow-typed": true
+  },
+  "editor.formatOnSave": true,
+  "html.format.enable": false
+}
