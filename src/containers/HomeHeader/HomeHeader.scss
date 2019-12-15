@@ -1,0 +1,17 @@
+@import '../../../styles/variables.scss';
+
+.header {
+  background-color: $color-back-header;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 198;
+  font-family: 'Gill Sans';
+  font-size: 12px;
+  line-height: 1em;
+  display: flex;
+  zoom: 1;
+  min-width: 1000px;
+  box-sizing: border-box;
+  flex-direction: column;
+}

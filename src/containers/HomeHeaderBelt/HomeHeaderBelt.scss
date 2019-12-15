@@ -1,0 +1,25 @@
+.nav-belt {
+  height: 54px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .belt-left {
+    left: 1559px;
+    width: 10%;
+  }
+  .belt-right {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    .account-display {
+      width: 70%;
+    }
+    .cart-display {
+      width: 30%;
+    }
+  }
+  .belt-center {
+    width: 70%;
+  }
+}
