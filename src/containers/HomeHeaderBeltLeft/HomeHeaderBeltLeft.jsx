@@ -4,7 +4,7 @@ import Router from 'next/router';
 import './HomeHeaderBeltLeft.scss';
 class HomeHeaderBeltLeft extends Component {
   handleClick = () => {
-    Router.push('/');
+    Router.push('/account');
   };
   render() {
     return (
