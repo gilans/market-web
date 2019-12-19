@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import App from 'next/app';
 import withRedux from 'next-redux-wrapper';
-import { makeStore } from '../store';
+import makeStore from '../store';
 import { PersistGate } from 'redux-persist/integration/react';
 
 class MyApp extends App {
