@@ -17,10 +17,13 @@ const logger = createLogger({
     }, {}),
 });
 
-const epicMiddleware = createEpicMiddleware();
-const reduxMiddleware = applyMiddleware(epicMiddleware, logger);
-
 export default (initialState, { isServer, req, debug, storeKey }) => {
+  const { NODE_ENV } = process.env;
+  const epicMiddleware = createEpicMiddleware();
+  const middleware = [epicMiddleware];
+  if (NODE_ENV === 'development') middleware.push(logger);
+  const reduxMiddleware = applyMiddleware(...middleware);
+
   if (isServer) return createStore(reducers, Immutable.fromJS(initialState), reduxMiddleware);
   const persistConfig = {
     key: 'nextjs',
