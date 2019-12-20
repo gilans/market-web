@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import { login } from '../../store/modules/auth/auth.state';
 
+import '../../styles/main-styles.scss';
+
 class Account extends Component {
   handleClick = e => {
     const { login, user } = this.props;

@@ -7,6 +7,13 @@
   .belt-left {
     left: 1559px;
     width: 10%;
+    &__logo-title {
+      font-size: 40px;
+      font-weight: bold;
+      padding-top: 30px;
+      padding-left: 20px;
+      color: white;
+    }
   }
   .belt-right {
     width: 20%;

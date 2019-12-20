@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import TextLogoLink from '../../components/TextLogoLink/TextLogoLink';
-import Router from 'next/router';
-import './HomeHeaderBeltLeft.scss';
+
+import LinkToPage from '../../components/LinkToPage/LinkToPage';
+
 class HomeHeaderBeltLeft extends Component {
-  handleClick = () => {
-    Router.push('/account');
-  };
   render() {
     return (
       <div className="belt-left">
-        <TextLogoLink titleLogo="Market" link={this.handleClick}></TextLogoLink>
+        <LinkToPage className="belt-left belt-left__logo-title" pagePath="account">
+          Market
+        </LinkToPage>
       </div>
     );
   }
