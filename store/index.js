@@ -25,6 +25,7 @@ export default (initialState, { isServer, req, debug, storeKey }) => {
   const reduxMiddleware = applyMiddleware(...middleware);
 
   if (isServer) return createStore(reducers, Immutable.fromJS(initialState), reduxMiddleware);
+
   const persistConfig = {
     key: 'nextjs',
     whitelist: ['account'],

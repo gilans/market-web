@@ -1,0 +1,10 @@
+@import './variables.scss';
+
+//Components styles
+@import '../src/components/styles.scss';
+
+//Containers styles
+@import '../src/containers/styles.scss';
+//Pages styles
+@import '../pages/styles/Home.scss';
+@import '../pages/styles/Error.scss';

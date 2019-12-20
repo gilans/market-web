@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './HomeHeaderBelt.scss';
+
 import HomeHeaderBeltLeft from '../HomeHeaderBeltLeft/HomeHeaderBeltLeft';
 import HomeHeaderBeltRight from '../HomeHeaderBeltRight/HomeHeaderBeltRight';
 import HomeHeaderBeltCenter from '../HomeHeaderBeltCenter/HomeHeaderBeltCenter';
