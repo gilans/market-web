@@ -3,5 +3,17 @@
     margin: 0;
     background: black;
     color: white;
+    @include mobile {
+      background: lightgray;
+    }
+    @include tablet {
+      background: gray;
+    }
+    @include laptop {
+      background: yellow;
+    }
+    @include desktop {
+      background: black;
+    }
   }
 }

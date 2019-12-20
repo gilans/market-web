@@ -1,5 +1,8 @@
 @import './variables.scss';
 
+//Mixins
+@import './breakpoints.scss';
+
 //Components styles
 @import '../src/components/styles.scss';
 
