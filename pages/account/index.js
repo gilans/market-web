@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Observable } from 'rxjs';
 import { connect } from 'react-redux';
 
 import { login } from '../../store/modules/auth/auth.state';
